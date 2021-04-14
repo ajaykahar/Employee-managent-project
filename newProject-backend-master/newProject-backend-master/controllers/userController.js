@@ -6,7 +6,7 @@ const ProjectModel=require('./../models/Project')
 
 
 
-
+// Api Methods
 router.post('/signup', (req, res) => {
   EmployeeModel.findOne({ email: req.body.email }, function (err, existingUser) {
     if (err) {
